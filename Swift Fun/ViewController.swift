@@ -4,7 +4,9 @@
 //
 //  Created by Jason Grunfeld on 5/11/18.
 //  Copyright © 2018 Jason Grunfeld. All rights reserved..
+//  Hello I like cheese 
 //
+
 
 import UIKit
 
@@ -16,7 +18,6 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) { // make screen red and change messege to "You got it" when tapped
        
         buttonCount = buttonCount + 1
-        
         
         
         if buttonCount >= 10{
