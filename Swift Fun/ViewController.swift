@@ -8,16 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    var buttonCount = 0
+   
+    @IBAction func buttonTapped(_ sender: Any) { // make screen red and change messege to "You got it" when tapped
+       
+        buttonCount = buttonCount + 1
+        
+        print(buttonCount)
+        
+        if buttonCount >= 10{
+            view.backgroundColor = UIColor.red
+            
+            myLabel.text = "You freaking did it"
+        }
+        
+    }
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
 
